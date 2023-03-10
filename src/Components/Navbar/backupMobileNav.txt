@@ -1,0 +1,102 @@
+import NavLinks from "./NavLinks";
+import logo from './logo.svg'
+import './navbar.css';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { useState } from "react";
+import { VscChromeClose } from 'react-icons/vsc'
+import { useRef } from "react";
+
+const MobileNav = () => {
+
+    // const [open, setOpen] = useState(false);
+    // const [isActive, setActive] = useState(false);
+
+    // const handleToggle = () => {
+    //     setActive(!isActive);
+    // };
+
+    // const handleOpen = () => {
+    //     setOpen(!open);
+    // }
+
+
+    // const hamburgerIcon = <GiHamburgerMenu className="hamburger" size="40px" fill="#FA0F1B" onClick={handleOpen} />;
+
+    // const closeIcon = <VscChromeClose className="hamburgerClose" size="40px" fill="#FA0F1B" onClick={handleOpen} />;
+    return (
+        <nav className="">
+            {/* <div className="logoName"><img src={logo} alt="Logo" /> <h1 className="name">Name</h1></div> */}
+            {/* {open ? closeIcon : hamburgerIcon} */}
+            {/* {open && <ul className={isActive ? "nav-links" : "nav-links.open"}>
+                <li><a href="index.html">Home</a></li>
+                <li><div className="line"></div></li>
+                <li><a href="#">About</a></li>
+                <li><div className="line"></div></li>
+                <li><a href="#">Contact</a></li>
+            </ul>} */}
+        </nav>
+    );
+}
+
+export default MobileNav;
+
+
+{/* <div className="hamburger">
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
+            </div> */}
+
+            {/* <GiHamburgerMenu className="hamburger" size="40px" fill="#FA0F1B" /> */}
+            {/* <div className="hamburger">
+                <div className="line1"></div>
+                <div className="line2"></div>
+                <div className="line3"></div>
+            </div> */}
+
+
+            <GiHamburgerMenu className={isActive ? "hamburger" : "toggle"} size="40px" fill="#FA0F1B" onClick={handleOpen} />
+
+
+            .login-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 15vw;
+    height: 10vh;
+    color: black;
+    background-color: var(--color-primary);
+    right: 3rem;
+    top: 1rem;
+    z-index: 5;
+}
+
+/* .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        color: var(--color-primary);
+        width: 2rem;
+        height: 2rem;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .hamburgerClose {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 5;
+        transition: all 0.7s ease;
+    } */

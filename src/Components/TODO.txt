@@ -1,0 +1,15 @@
+TODO: BACKEND: Zrobić cały backend do strony:
+    -Stworzyć bazę danych
+    -Zrobić logowanie NIE PHP tylko js lub podobnym 
+    -zrobić cms do dodawania nowych ćwiczeń do poszczególnych kategorii
+    -zrobić wyszukiwarkę ćwiczeń po nazwie która aktualizuję się na bierząco (fetchami tak mówił piotrek)
+
+TODO: FRONTEND:
+    X -Skończyć poprawki w frontendzie (Chyba skończone)
+    -Stworzyć stronę logowania oraz rejestracji użytkownika
+    -stworzyć podstronę z przeglądem ćwiczeń
+    -stworzyć podstrony z ćwiczeniami 
+    -zrobić stronę cms do dodawania ćwiczeń 
+
+
+TODO: Zrobić ładny kolorek tekstu w plikach txt, zrobić przekreślanie zrobionych rzeczy

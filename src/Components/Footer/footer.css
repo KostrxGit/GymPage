@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 30vh;
+    background-color: var(--footer-bg-color);
+    font-size: 1.3rem;
+    font-weight: 400;
+
+}
+
+.footer h2 {
+    font-size: 1.5rem;
+    color: rgb(170, 170, 170);
+    font-weight: 700;
+    margin: 1rem;
+
+}
+
+.description {
+    width: 45vw;
+    height: 25vh;
+    margin: 2rem;
+    padding: 1rem;
+
+}
+
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
+
+}
+
+.socials-icons {
+    height: auto;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.7rem;
+    margin: 1rem;
+}
+
+.socials-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: right;
+    color: rgb(170, 170, 170);
+    font-size: 1.5rem;
+    width: auto;
+    margin: 0.4rem;
+    height: auto;
+
+}
+
+.socials-icons a p {
+    text-align: right;
+    margin: 2px;
+    color: rgb(170, 170, 170);
+    font-size: 1.5rem;
+
+}
+
+.socials-icons a p:hover {
+    color: rgb(110, 110, 110);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Icons size */
+
+.github,
+.discord,
+.mail {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        flex-direction: column;
+        height: 60vh;
+        justify-content: space-evenly;
+    }
+
+    .description {
+        width: 80vw;
+        height: 20vh;
+        margin: 0;
+    }
+
+    .socials {
+        width: 80vw;
+        height: 20vh;
+        margin: 0;
+    }
+
+    .socials-icons {
+        width: 100vw;
+        height: 20vh;
+        margin: 0;
+    }
+
+    .socials-icons a {
+        font-size: 1.5rem;
+    }
+
+    .socials-icons a p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        height: 60rem;
+        justify-content: space-evenly;
+    }
+
+    .description {
+        width: 80vw;
+        height: 15vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    .description h2 {
+        font-size: 1.2rem;
+        margin: 3px;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .socials {
+        width: 80vw;
+        height: 20vh;
+        margin: 1rem;
+    }
+
+    .socials-icons {
+        width: 100vw;
+        height: 20vh;
+        margin: 0;
+    }
+
+    .socials-icons a {
+        font-size: 1rem;
+    }
+
+    .socials-icons a p {
+        font-size: 1rem;
+    }
+
+    .socials h2 {
+        font-size: 1.2rem;
+        margin: 0.2rem;
+    }
+
+    .github,
+    .discord,
+    .mail {
+        font-size: 30px;
+    }
+}

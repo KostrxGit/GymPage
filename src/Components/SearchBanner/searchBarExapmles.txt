@@ -1,0 +1,70 @@
+import "./banner.css";
+import { useState } from "react";
+import TextField from "@mui/material/TextField";
+import List from "../Components/List";
+
+
+const SearchBar = () => {
+    const [inputText, setInputText] = useState("");
+    let inputHandler = (e) => {
+        //convert input text to lower case
+        var lowerCase = e.target.value.toLowerCase();
+        setInputText(lowerCase);
+    };
+
+    return (
+        <div className="main">
+            <div className="search">
+                <TextField
+                    id="outlined-basic"
+                    onChange={inputHandler}
+                    variant="outlined"
+                    fullWidth
+                    label="Search"
+                />
+            </div>
+        </div>
+    );
+}
+
+export default SearchBar;
+
+
+import "./banner.css";
+import SearchBar from "./searchBar";
+
+const Banner = () => {
+    return (
+        <div className="banner">
+            <div className="image">
+                <h1>Exercises <span className="redWord">Search</span> Engine</h1>
+                <SearchBar />
+            </div>
+        </div>
+    );
+}
+
+export default Banner;
+
+
+/* Search Bar styles */
+
+.main {
+    margin-top: 45rem;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+
+.search {
+    width: 30%;
+    background-color: #131313;
+}
+
+ul li {
+    font-size: 20px;
+}-

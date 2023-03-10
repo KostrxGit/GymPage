@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.exer {
+    height: auto;
+    width: 100vw;
+    padding: 5px;
+}
+
+.bodyElements {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    list-style: none;
+}
+
+.grid-item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 260px;
+    position: relative;
+    height: 16rem;
+    width: 27rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #ecf0f7;
+    background-image: url("people.jpg");
+    background-size: cover;
+    transform: translate(0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.14s ease-in, text-shadow 0.1s ease-in;
+    will-change: transform;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.grid-item span {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.7rem;
+    padding: 10px;
+    width: 11rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px 0px 10px 0px;
+}
+
+.grid-item:hover span {
+    background-color: rgba(255, 16, 16, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.grid-item:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: none;
+    border-radius: 3px;
+    box-shadow: 0 10px 24px 0px rgba(0, 0, 0, 0.02), 0 8px 20px -2px rgba(0, 0, 0, 0.06), 0 6px 10px -6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.1s ease-in;
+    will-change: opacity;
+    opacity: 0;
+}
+
+.grid-item:hover {
+    transform: translate(0, -20px);
+    transform: translate3d(0, -20px, 0);
+}
+
+.grid-item:hover:before {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1400px) {
+    .grid {
+        grid-template-columns: auto auto;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-item {
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .grid-item span {
+        font-size: 1.4rem;
+        padding: 5px;
+    }
+}

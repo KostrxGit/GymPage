@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    background-image: url("gym.jpg");
+    background-size: cover;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #ffffff00 0%, #000000ad 50%, #000000 100%);
+}
+
+
+.banner h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.redWord {
+    transform: translate(-50%, -50%);
+    color: var(--color-primary);
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* SearchBar Styles */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100vw;
+}
+
+.searchIcon {
+    z-index: 1;
+}
+
+.searchBar {
+    display: flex;
+}
+
+.searchBar input {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+    height: 3.2rem;
+    background-color: var(--first-bg-color);
+    border-radius: 5px;
+    border: none;
+    padding: 4px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.searchBar input:focus {
+    outline: solid 1px var(--color-primary);
+}
+
+
+@media screen and (max-width: 1500px) {
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .redWord {
+        font-size: 3rem;
+    }
+
+    .searchBar input {
+        width: 35rem;
+    }
+}
+
+
+@media screen and (max-width: 1140px) {
+    .banner h1 {
+        font-size: 2.5rem;
+        line-height: 2.3rem;
+    }
+
+    .redWord {
+        font-size: 2.5rem;
+    }
+
+    .searchBar input {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        height: 70vh;
+    }
+
+    .banner h1 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .redWord {
+        font-size: 1.8rem;
+    }
+
+    .searchBar input {
+        width: 20rem;
+    }
+}
