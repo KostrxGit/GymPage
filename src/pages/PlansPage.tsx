@@ -2,7 +2,7 @@ import Banner from '../Components/SearchBanner/banner'
 
 
 
-function AboutPage() {
+function PlansPage() {
     return (
         <div>
             <Banner />
@@ -10,7 +10,7 @@ function AboutPage() {
     )
 }
 
-export default AboutPage
+export default PlansPage
 
 
 
