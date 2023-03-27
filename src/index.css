@@ -11,7 +11,6 @@
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
 
   background-color: black;
 
@@ -20,8 +19,6 @@
   --color-primary: #FA0F1B;
   --color-secondary: #A0030B;
 
-  margin: 0;
-  padding: 0;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
